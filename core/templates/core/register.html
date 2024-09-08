@@ -78,11 +78,19 @@
     .btn-primary:hover {
         background-color: rgb(16, 139, 139);
     }
-    @media only screen and (max-width: 768px) {
-        body {
-            background-image: url("{% static 'core/images/Mobile.jpg' %}");
+    @media (max-width: 768px) {
+            body {
+                background-image: url("{% static 'core/images/mobile.jpg' %}");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .container {
+                /* Shift the container down on mobile devices */
+                margin-top: 100px; /* Adjust this value as needed */
+            }
         }
-    }
 </style>
 
 <div class="container">
