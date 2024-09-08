@@ -23,7 +23,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         width: 100%;
         max-width: 500px;
-        background: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.2);
     }
 
     h2 {
@@ -78,17 +78,13 @@
     .btn-primary:hover {
         background-color: rgb(16, 139, 139);
     }
-    @media (max-width: 768px) {
+    /* Media queries for different devices */
+        @media (max-width: 768px) {
             body {
-                background-image: url("{% static 'core/images/mobile.jpg' %}");
+                background-image: url("{% static 'core/images/Mobile.jpg' %}");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-            }
-
-            .container {
-                /* Shift the container down on mobile devices */
-                margin-top: 100px; /* Adjust this value as needed */
             }
         }
 </style>
