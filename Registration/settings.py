@@ -120,11 +120,10 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
-# Ensure STATICFILES_DIRS is configured to look for static files in core/static
 STATICFILES_DIRS = [
     BASE_DIR / 'core' / 'static',
 ]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = 'media/'
 
 
